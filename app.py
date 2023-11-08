@@ -7,6 +7,9 @@ app = Flask(__name__)
 #  Initialize variable for Weather.gov API
 API_BASE_URL = 'https://api.weather.gov'
 
+@app.route('/')
+def home():
+    return 'Hello! To access weather data, please use the /get-weather route with altitude and longitude as parameters. Example: get-weather?latitude=XX.XXXX&longitude=XX.XXXX'
 
 @app.route('/get-weather')
 def get_weather():
