@@ -42,11 +42,11 @@ else:
 ### Response
 - The response is expected in JSON format, representing a list of dictionaries.
 - Each dictionary contains key-value pairs for the following:
--   `day`: Day of the forecast (e.g., 'Today')
--   `forecast`: Short weather forecast description (e.g., 'Mostly Sunny')
--   `temperature`: Temperature in degrees Farenheight (e.g., 65)
-- ```
-  # Example
+  - `day`: Day of the forecast (e.g., 'Today')
+  - `forecast`: Short weather forecast description (e.g., 'Mostly Sunny')
+  - `temperature`: Temperature in degrees Farenheight (e.g., 65)
+- Example
+  ```
   [
     {
       "day":"Today",
