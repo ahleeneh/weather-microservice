@@ -1,9 +1,11 @@
 import requests
 import os
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 
 # Create Flask application
 app = Flask(__name__)
+CORS(app)
 
 #  Initialize variable for Weather.gov API
 API_BASE_URL = 'https://api.weather.gov'
